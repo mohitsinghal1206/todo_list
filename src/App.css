@@ -1,38 +1,135 @@
 .App {
   text-align: center;
+  flex: 1; /* Allow the app to grow and fill space */
+  padding: 20px; /* Add padding to the app container */
 }
 
+/* Logo styles */
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
+  pointer-events: none; /* Prevent interaction with the logo */
+  margin-bottom: 20px; /* Spacing below the logo */
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* Logo spin animation */
   }
 }
 
+/* Header styles */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #6200ea; /* Vibrant purple header */
+  color: #ffffff; /* White text */
+  padding: 20px 0; /* Padding for top and bottom */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin-bottom: 20px; /* Space below header */
 }
 
+/* Typography */
+h1 {
+  font-size: 2.5rem; /* Larger heading */
+  margin: 0; /* Remove margin */
+  font-weight: 600; /* Bold heading */
+  color: #ffeb3b; /* Bright yellow */
+}
+
+p {
+  font-size: 1rem; /* Standard paragraph font size */
+  line-height: 1.6; /* Improved line height for readability */
+  margin: 10px 0; /* Spacing for paragraphs */
+  color: #755656; /* Darker text for contrast */
+}
+
+/* About component styles */
+.about-content {
+  color: #000000; /* Black text for About content */
+  margin: 20px; /* Margin around About content */
+  line-height: 1.6; /* Improve line height for readability */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.about-content:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Title styles */
+.about-title {
+  font-weight: bold; /* Bold style for the title */
+  font-size: 1.5rem; /* Larger font size for title */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.about-title:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Description styles */
+.about-description {
+  font-size: 1rem; /* Standard font size for description */
+  transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.about-description:hover {
+  transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+/* Link styles */
 .App-link {
-  color: #61dafb;
+  color: #ff4081; /* Bright pink link color */
+  text-decoration: none; /* Remove underline */
 }
 
+.App-link:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #e91e63; /* Darker pink on hover */
+}
+
+/* Spin animation for the logo */
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Start position */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* End position */
+  }
+}
+
+/* Footer styles */
+.footer-content {
+  background-color: #000000; /* Black footer background */
+  color: #ffffff; /* White text */
+  text-align: center; /* Center text */
+  padding: 20px; /* Padding inside the footer */
+  width: 100%; /* Full width */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.footer-content:hover {
+  background-color: #333333; /* Dark gray background on hover */
+}
+
+/* Footer text styles */
+.footer-text {
+  font-size: 1rem; /* Standard font size for footer text */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-text:hover {
+  color: #61dafb; /* Change color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 15px 0; /* Reduce padding on smaller screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Smaller heading on mobile */
+  }
+
+  .App-link {
+    font-size: 0.9rem; /* Smaller link font size on mobile */
   }
 }
